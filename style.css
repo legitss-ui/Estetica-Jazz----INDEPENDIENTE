@@ -20,7 +20,11 @@
     padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -789,13 +793,21 @@ footer {
 
     /* NAV */
     nav {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.2rem;
         justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .nav-links { display: none; }
 
     .nav-hamburger { display: flex; }
+
+    /* MARQUEE */
+    .marquee-item {
+        padding: 0 1.2rem;
+        font-size: 0.72rem;
+    }
 
     /* HERO */
     .hero {
